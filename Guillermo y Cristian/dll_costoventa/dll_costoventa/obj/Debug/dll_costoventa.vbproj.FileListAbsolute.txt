@@ -1,0 +1,18 @@
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\bin\Debug\dll_costoventa.dll
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\bin\Debug\dll_costoventa.pdb
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\bin\Debug\dll_costoventa.xml
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\obj\Debug\dll_costoventa.Resources.resources
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\obj\Debug\dll_costoventa.wfCostoVenta.resources
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\obj\Debug\dll_costoventa.vbproj.GenerateResource.Cache
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\obj\Debug\dll_costoventa.dll
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\obj\Debug\dll_costoventa.xml
+C:\Users\cristian\AppData\Local\Temporary Projects\dll_costoventa\obj\Debug\dll_costoventa.pdb
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\bin\Debug\dll_costoventa.dll
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\bin\Debug\dll_costoventa.pdb
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\bin\Debug\dll_costoventa.xml
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.Resources.resources
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.wfCostoVenta.resources
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.vbproj.GenerateResource.Cache
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.dll
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.xml
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.pdb
