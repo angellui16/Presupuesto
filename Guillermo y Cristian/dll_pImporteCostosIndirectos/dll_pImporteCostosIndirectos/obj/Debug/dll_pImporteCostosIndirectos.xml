@@ -57,5 +57,135 @@ dll_pImporteCostosIndirectos
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet.tbl_frm_imp_costosindDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet.tbl_frm_imp_costosindRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet.tbl_frm_imp_costosindRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.tbl_frm_imp_costosindTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(dll_pImporteCostosIndirectos.presupuestoDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(dll_pImporteCostosIndirectos.presupuestoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(dll_pImporteCostosIndirectos.presupuestoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.UpdateAll(dll_pImporteCostosIndirectos.presupuestoDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1.tbl_frm_imp_costosindDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1.tbl_frm_imp_costosindRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1.tbl_frm_imp_costosindRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.tbl_frm_imp_costosindTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(dll_pImporteCostosIndirectos.presupuestoDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(dll_pImporteCostosIndirectos.presupuestoDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(dll_pImporteCostosIndirectos.presupuestoDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.UpdateAll(dll_pImporteCostosIndirectos.presupuestoDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

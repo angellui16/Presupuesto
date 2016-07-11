@@ -90,6 +90,16 @@
     <Compile Include="Presentacion\wfImporteCostosIndirectos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="presupuestoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>presupuestoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="presupuestoDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>presupuestoDataSet1.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -115,6 +125,28 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="presupuestoDataSet.xsc">
+      <DependentUpon>presupuestoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="presupuestoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>presupuestoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="presupuestoDataSet.xss">
+      <DependentUpon>presupuestoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="presupuestoDataSet1.xsc">
+      <DependentUpon>presupuestoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="presupuestoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>presupuestoDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="presupuestoDataSet1.xss">
+      <DependentUpon>presupuestoDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\índice.png" />
   </ItemGroup>
   <ItemGroup>
