@@ -1,0 +1,9 @@
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\bin\Debug\dll_acercade.dll
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\bin\Debug\dll_acercade.pdb
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\bin\Debug\dll_acercade.xml
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\obj\Debug\dll_acercade.Resources.resources
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\obj\Debug\dll_acercade.wfAcercade.resources
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\obj\Debug\dll_acercade.vbproj.GenerateResource.Cache
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\obj\Debug\dll_acercade.dll
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\obj\Debug\dll_acercade.xml
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_acercade\dll_acercade\obj\Debug\dll_acercade.pdb
