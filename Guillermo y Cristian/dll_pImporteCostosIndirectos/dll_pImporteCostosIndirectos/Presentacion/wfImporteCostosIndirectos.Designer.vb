@@ -24,6 +24,8 @@ Partial Class wfImporteCostosIndirectos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wfImporteCostosIndirectos))
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtIdpresupuesto = New System.Windows.Forms.TextBox()
@@ -32,11 +34,20 @@ Partial Class wfImporteCostosIndirectos
         Me.tc1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.dgv1 = New System.Windows.Forms.DataGridView()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.dgvDatos = New System.Windows.Forms.DataGridView()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.dgvdatos2 = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
-        Me.btnCalcular = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -45,44 +56,34 @@ Partial Class wfImporteCostosIndirectos
         Me.dtpPeriodo = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtEmpresa = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.lblUsuario = New System.Windows.Forms.Label()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.lblMoneda = New System.Windows.Forms.Label()
         Me.txtMoneda = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.dgvDatos = New System.Windows.Forms.DataGridView()
         Me.PresupuestoDataSet = New dll_pImporteCostosIndirectos.presupuestoDataSet()
         Me.TblfrmimpcostosindBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_frm_imp_costosindTableAdapter = New dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.tbl_frm_imp_costosindTableAdapter()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.PresupuestoDataSet1 = New dll_pImporteCostosIndirectos.presupuestoDataSet1()
         Me.TblfrmimpcostosindBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_frm_imp_costosindTableAdapter1 = New dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.tbl_frm_imp_costosindTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.dgvdatos2 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.tc1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage3.SuspendLayout()
+        CType(Me.dgvdatos2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         CType(Me.PresupuestoDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblfrmimpcostosindBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PresupuestoDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblfrmimpcostosindBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage3.SuspendLayout()
-        CType(Me.dgvdatos2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -109,6 +110,7 @@ Partial Class wfImporteCostosIndirectos
         '
         Me.txtIdpresupuesto.Location = New System.Drawing.Point(137, 78)
         Me.txtIdpresupuesto.Name = "txtIdpresupuesto"
+        Me.txtIdpresupuesto.ReadOnly = True
         Me.txtIdpresupuesto.Size = New System.Drawing.Size(100, 20)
         Me.txtIdpresupuesto.TabIndex = 0
         '
@@ -121,7 +123,7 @@ Partial Class wfImporteCostosIndirectos
         Me.Panel1.Location = New System.Drawing.Point(36, 173)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(633, 285)
-        Me.Panel1.TabIndex = 4
+        Me.Panel1.TabIndex = 6
         '
         'txtTotal
         '
@@ -129,7 +131,7 @@ Partial Class wfImporteCostosIndirectos
         Me.txtTotal.Location = New System.Drawing.Point(84, 260)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(100, 20)
-        Me.txtTotal.TabIndex = 0
+        Me.txtTotal.TabIndex = 1
         '
         'tc1
         '
@@ -140,7 +142,7 @@ Partial Class wfImporteCostosIndirectos
         Me.tc1.Name = "tc1"
         Me.tc1.SelectedIndex = 0
         Me.tc1.Size = New System.Drawing.Size(630, 251)
-        Me.tc1.TabIndex = 5
+        Me.tc1.TabIndex = 0
         '
         'TabPage1
         '
@@ -164,6 +166,48 @@ Partial Class wfImporteCostosIndirectos
         Me.dgv1.Size = New System.Drawing.Size(616, 219)
         Me.dgv1.TabIndex = 0
         '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.dgvDatos)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(622, 225)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Consulta costos indirectos"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'dgvDatos
+        '
+        Me.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDatos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvDatos.Location = New System.Drawing.Point(3, 3)
+        Me.dgvDatos.Name = "dgvDatos"
+        Me.dgvDatos.Size = New System.Drawing.Size(616, 219)
+        Me.dgvDatos.TabIndex = 1
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.dgvdatos2)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(622, 225)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Consulta presupuesto costo indirecto"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'dgvdatos2
+        '
+        Me.dgvdatos2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvdatos2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvdatos2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvdatos2.Location = New System.Drawing.Point(3, 3)
+        Me.dgvdatos2.Name = "dgvdatos2"
+        Me.dgvdatos2.Size = New System.Drawing.Size(616, 219)
+        Me.dgvdatos2.TabIndex = 2
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -176,21 +220,77 @@ Partial Class wfImporteCostosIndirectos
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Button3)
+        Me.Panel2.Controls.Add(Me.Label12)
+        Me.Panel2.Controls.Add(Me.btnNuevo)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Label8)
-        Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.btnEliminar)
         Me.Panel2.Controls.Add(Me.btnModificar)
-        Me.Panel2.Controls.Add(Me.btnCalcular)
         Me.Panel2.Controls.Add(Me.btnSalir)
         Me.Panel2.Controls.Add(Me.btnGuardar)
-        Me.Panel2.Location = New System.Drawing.Point(1, 464)
+        Me.Panel2.Location = New System.Drawing.Point(-5, 464)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(674, 83)
         Me.Panel2.TabIndex = 5
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(316, 66)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(39, 13)
+        Me.Label12.TabIndex = 6
+        Me.Label12.Text = "Nuevo"
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.BackgroundImage = CType(resources.GetObject("btnNuevo.BackgroundImage"), System.Drawing.Image)
+        Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnNuevo.FlatAppearance.BorderSize = 0
+        Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevo.Location = New System.Drawing.Point(301, 8)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(65, 55)
+        Me.btnNuevo.TabIndex = 2
+        Me.btnNuevo.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(607, 66)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(27, 13)
+        Me.Label11.TabIndex = 9
+        Me.Label11.Text = "Salir"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(526, 66)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(43, 13)
+        Me.Label10.TabIndex = 8
+        Me.Label10.Text = "Eliminar"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(452, 66)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "Modificar"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(381, 66)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 13)
+        Me.Label8.TabIndex = 6
+        Me.Label8.Text = "Guardar"
         '
         'btnEliminar
         '
@@ -198,10 +298,10 @@ Partial Class wfImporteCostosIndirectos
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnEliminar.FlatAppearance.BorderSize = 0
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Location = New System.Drawing.Point(514, 3)
+        Me.btnEliminar.Location = New System.Drawing.Point(514, 8)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(65, 55)
-        Me.btnEliminar.TabIndex = 4
+        Me.btnEliminar.TabIndex = 5
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnModificar
@@ -210,23 +310,11 @@ Partial Class wfImporteCostosIndirectos
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnModificar.FlatAppearance.BorderSize = 0
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModificar.Location = New System.Drawing.Point(443, 3)
+        Me.btnModificar.Location = New System.Drawing.Point(443, 8)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(65, 55)
-        Me.btnModificar.TabIndex = 3
+        Me.btnModificar.TabIndex = 4
         Me.btnModificar.UseVisualStyleBackColor = True
-        '
-        'btnCalcular
-        '
-        Me.btnCalcular.BackgroundImage = Global.dll_pImporteCostosIndirectos.My.Resources.Resources.calculator
-        Me.btnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnCalcular.FlatAppearance.BorderSize = 0
-        Me.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCalcular.Location = New System.Drawing.Point(27, 3)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(65, 55)
-        Me.btnCalcular.TabIndex = 2
-        Me.btnCalcular.UseVisualStyleBackColor = True
         '
         'btnSalir
         '
@@ -234,10 +322,10 @@ Partial Class wfImporteCostosIndirectos
         Me.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnSalir.FlatAppearance.BorderSize = 0
         Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSalir.Location = New System.Drawing.Point(585, 3)
+        Me.btnSalir.Location = New System.Drawing.Point(585, 8)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(65, 55)
-        Me.btnSalir.TabIndex = 1
+        Me.btnSalir.TabIndex = 6
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'btnGuardar
@@ -245,13 +333,12 @@ Partial Class wfImporteCostosIndirectos
         Me.btnGuardar.BackgroundImage = Global.dll_pImporteCostosIndirectos.My.Resources.Resources.Floppy_disk_512
         Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Default
-        Me.btnGuardar.Enabled = False
         Me.btnGuardar.FlatAppearance.BorderSize = 0
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Location = New System.Drawing.Point(372, 8)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(65, 55)
-        Me.btnGuardar.TabIndex = 0
+        Me.btnGuardar.TabIndex = 3
         Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
@@ -278,9 +365,9 @@ Partial Class wfImporteCostosIndirectos
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(40, 138)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 15)
+        Me.Label5.Size = New System.Drawing.Size(44, 15)
         Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Periodo:"
+        Me.Label5.Text = "Fecha:"
         '
         'dtpPeriodo
         '
@@ -307,19 +394,6 @@ Partial Class wfImporteCostosIndirectos
         Me.txtEmpresa.Name = "txtEmpresa"
         Me.txtEmpresa.Size = New System.Drawing.Size(100, 20)
         Me.txtEmpresa.TabIndex = 3
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = Global.dll_pImporteCostosIndirectos.My.Resources.Resources.phonebook1
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Enabled = False
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(36, 8)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 58)
-        Me.Button1.TabIndex = 6
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'lblUsuario
         '
@@ -353,72 +427,6 @@ Partial Class wfImporteCostosIndirectos
         Me.txtMoneda.Size = New System.Drawing.Size(100, 20)
         Me.txtMoneda.TabIndex = 5
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(39, 61)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 13)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "Calcular"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(381, 66)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 13)
-        Me.Label8.TabIndex = 6
-        Me.Label8.Text = "Guardar"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(451, 61)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 13)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Modificar"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(528, 61)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(43, 13)
-        Me.Label10.TabIndex = 8
-        Me.Label10.Text = "Eliminar"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(607, 61)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(27, 13)
-        Me.Label11.TabIndex = 9
-        Me.Label11.Text = "Salir"
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.dgvDatos)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(622, 225)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Consulta costos indirectos"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'dgvDatos
-        '
-        Me.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDatos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvDatos.Location = New System.Drawing.Point(3, 3)
-        Me.dgvDatos.Name = "dgvDatos"
-        Me.dgvDatos.Size = New System.Drawing.Size(616, 219)
-        Me.dgvDatos.TabIndex = 1
-        '
         'PresupuestoDataSet
         '
         Me.PresupuestoDataSet.DataSetName = "presupuestoDataSet"
@@ -432,19 +440,6 @@ Partial Class wfImporteCostosIndirectos
         'Tbl_frm_imp_costosindTableAdapter
         '
         Me.Tbl_frm_imp_costosindTableAdapter.ClearBeforeFill = True
-        '
-        'Button3
-        '
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(110, 3)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(65, 55)
-        Me.Button3.TabIndex = 11
-        Me.Button3.UseVisualStyleBackColor = True
-        Me.Button3.Visible = False
         '
         'PresupuestoDataSet1
         '
@@ -460,13 +455,31 @@ Partial Class wfImporteCostosIndirectos
         '
         Me.Tbl_frm_imp_costosindTableAdapter1.ClearBeforeFill = True
         '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.dll_pImporteCostosIndirectos.My.Resources.Resources.phonebook1
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.Enabled = False
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(36, 8)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 58)
+        Me.Button1.TabIndex = 6
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Column1
         '
-        Me.Column1.HeaderText = "Id Costo Indirecto"
+        Me.Column1.HeaderText = "Id costo"
         Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Visible = False
         '
         'Column2
         '
+        DataGridViewCellStyle5.Format = "N3"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle5
         Me.Column2.HeaderText = "Id presupuesto costo indirecto"
         Me.Column2.Name = "Column2"
         '
@@ -477,29 +490,11 @@ Partial Class wfImporteCostosIndirectos
         '
         'Column4
         '
+        DataGridViewCellStyle6.Format = "Q###,###,###.##"
+        DataGridViewCellStyle6.NullValue = "00.00"
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle6
         Me.Column4.HeaderText = "Valor"
         Me.Column4.Name = "Column4"
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.dgvdatos2)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(622, 225)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Consulta presupuesto costo indirecto"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'dgvdatos2
-        '
-        Me.dgvdatos2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvdatos2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvdatos2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvdatos2.Location = New System.Drawing.Point(3, 3)
-        Me.dgvdatos2.Name = "dgvdatos2"
-        Me.dgvdatos2.Size = New System.Drawing.Size(616, 219)
-        Me.dgvdatos2.TabIndex = 2
         '
         'wfImporteCostosIndirectos
         '
@@ -535,16 +530,16 @@ Partial Class wfImporteCostosIndirectos
         Me.tc1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage3.ResumeLayout(False)
+        CType(Me.dgvdatos2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.PresupuestoDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblfrmimpcostosindBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PresupuestoDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblfrmimpcostosindBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage3.ResumeLayout(False)
-        CType(Me.dgvdatos2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -569,7 +564,6 @@ Partial Class wfImporteCostosIndirectos
     Friend WithEvents dtpPeriodo As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtEmpresa As System.Windows.Forms.TextBox
-    Friend WithEvents btnCalcular As System.Windows.Forms.Button
     Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents lblUsuario As System.Windows.Forms.Label
@@ -582,18 +576,18 @@ Partial Class wfImporteCostosIndirectos
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents PresupuestoDataSet As presupuestoDataSet
     Friend WithEvents TblfrmimpcostosindBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Tbl_frm_imp_costosindTableAdapter As presupuestoDataSetTableAdapters.tbl_frm_imp_costosindTableAdapter
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents PresupuestoDataSet1 As presupuestoDataSet1
     Friend WithEvents TblfrmimpcostosindBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents Tbl_frm_imp_costosindTableAdapter1 As presupuestoDataSet1TableAdapters.tbl_frm_imp_costosindTableAdapter
+    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Friend WithEvents dgvdatos2 As System.Windows.Forms.DataGridView
+    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
-    Friend WithEvents dgvdatos2 As System.Windows.Forms.DataGridView
 End Class

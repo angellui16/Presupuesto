@@ -6,6 +6,7 @@ C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndire
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\bin\Debug\dllConexion.pdb
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\bin\Debug\dllConexion.xml
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\obj\Debug\dll_pImporteCostosIndirectos.Resources.resources
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\obj\Debug\dll_pImporteCostosIndirectos.wfCuentasIndirectas.resources
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\obj\Debug\dll_pImporteCostosIndirectos.wfImporteCostosIndirectos.resources
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\obj\Debug\dll_pImporteCostosIndirectos.vbproj.GenerateResource.Cache
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_pImporteCostosIndirectos\dll_pImporteCostosIndirectos\obj\Debug\dll_pImporteCostosIndirectos.dll
