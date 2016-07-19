@@ -43,6 +43,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dllConexion">
+      <HintPath>..\..\..\..\..\Downloads\wetransfer-57629d\dllConexion\dllConexion\dllConexion\bin\Debug\dllConexion.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -80,6 +83,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="wfConsultacv.Designer.vb">
+      <DependentUpon>wfConsultacv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wfConsultacv.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="wfCostoVenta.Designer.vb">
       <DependentUpon>wfCostoVenta.vb</DependentUpon>
     </Compile>
@@ -93,6 +102,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfConsultacv.resx">
+      <DependentUpon>wfConsultacv.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wfCostoVenta.resx">
       <DependentUpon>wfCostoVenta.vb</DependentUpon>
@@ -126,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\contactbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

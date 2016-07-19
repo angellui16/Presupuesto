@@ -23,9 +23,9 @@ Partial Class wfImporteCostosIndirectos
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(wfImporteCostosIndirectos))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtIdpresupuesto = New System.Windows.Forms.TextBox()
@@ -34,6 +34,10 @@ Partial Class wfImporteCostosIndirectos
         Me.tc1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.dgv1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.dgvDatos = New System.Windows.Forms.DataGridView()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -55,11 +59,8 @@ Partial Class wfImporteCostosIndirectos
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dtpPeriodo = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtEmpresa = New System.Windows.Forms.TextBox()
         Me.lblUsuario = New System.Windows.Forms.Label()
-        Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.lblMoneda = New System.Windows.Forms.Label()
-        Me.txtMoneda = New System.Windows.Forms.TextBox()
         Me.PresupuestoDataSet = New dll_pImporteCostosIndirectos.presupuestoDataSet()
         Me.TblfrmimpcostosindBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_frm_imp_costosindTableAdapter = New dll_pImporteCostosIndirectos.presupuestoDataSetTableAdapters.tbl_frm_imp_costosindTableAdapter()
@@ -67,10 +68,9 @@ Partial Class wfImporteCostosIndirectos
         Me.TblfrmimpcostosindBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_frm_imp_costosindTableAdapter1 = New dll_pImporteCostosIndirectos.presupuestoDataSet1TableAdapters.tbl_frm_imp_costosindTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cboEmpresa = New System.Windows.Forms.ComboBox()
+        Me.cboUsuario = New System.Windows.Forms.ComboBox()
+        Me.cboMoneda = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.tc1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -166,6 +166,34 @@ Partial Class wfImporteCostosIndirectos
         Me.dgv1.Size = New System.Drawing.Size(616, 219)
         Me.dgv1.TabIndex = 0
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Id costo"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Visible = False
+        '
+        'Column2
+        '
+        DataGridViewCellStyle1.Format = "N3"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle1
+        Me.Column2.HeaderText = "Id presupuesto costo indirecto"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Nombre "
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        DataGridViewCellStyle2.Format = "Q###,###,###.##"
+        DataGridViewCellStyle2.NullValue = "00.00"
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Column4.HeaderText = "Valor"
+        Me.Column4.Name = "Column4"
+        '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.dgvDatos)
@@ -238,9 +266,10 @@ Partial Class wfImporteCostosIndirectos
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(316, 66)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(39, 13)
+        Me.Label12.Size = New System.Drawing.Size(47, 15)
         Me.Label12.TabIndex = 6
         Me.Label12.Text = "Nuevo"
         '
@@ -250,7 +279,7 @@ Partial Class wfImporteCostosIndirectos
         Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnNuevo.FlatAppearance.BorderSize = 0
         Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevo.Location = New System.Drawing.Point(301, 8)
+        Me.btnNuevo.Location = New System.Drawing.Point(305, 8)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(65, 55)
         Me.btnNuevo.TabIndex = 2
@@ -259,36 +288,40 @@ Partial Class wfImporteCostosIndirectos
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(607, 66)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(27, 13)
+        Me.Label11.Size = New System.Drawing.Size(37, 15)
         Me.Label11.TabIndex = 9
         Me.Label11.Text = "Salir"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(526, 66)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(43, 13)
+        Me.Label10.Size = New System.Drawing.Size(61, 15)
         Me.Label10.TabIndex = 8
         Me.Label10.Text = "Eliminar"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(452, 66)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.Size = New System.Drawing.Size(67, 15)
         Me.Label9.TabIndex = 7
         Me.Label9.Text = "Modificar"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(381, 66)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(45, 13)
+        Me.Label8.Size = New System.Drawing.Size(59, 15)
         Me.Label8.TabIndex = 6
         Me.Label8.Text = "Guardar"
         '
@@ -298,7 +331,7 @@ Partial Class wfImporteCostosIndirectos
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnEliminar.FlatAppearance.BorderSize = 0
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Location = New System.Drawing.Point(514, 8)
+        Me.btnEliminar.Location = New System.Drawing.Point(519, 8)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(65, 55)
         Me.btnEliminar.TabIndex = 5
@@ -310,7 +343,7 @@ Partial Class wfImporteCostosIndirectos
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnModificar.FlatAppearance.BorderSize = 0
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModificar.Location = New System.Drawing.Point(443, 8)
+        Me.btnModificar.Location = New System.Drawing.Point(446, 8)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(65, 55)
         Me.btnModificar.TabIndex = 4
@@ -322,7 +355,7 @@ Partial Class wfImporteCostosIndirectos
         Me.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnSalir.FlatAppearance.BorderSize = 0
         Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSalir.Location = New System.Drawing.Point(585, 8)
+        Me.btnSalir.Location = New System.Drawing.Point(589, 8)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(65, 55)
         Me.btnSalir.TabIndex = 6
@@ -335,7 +368,7 @@ Partial Class wfImporteCostosIndirectos
         Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Default
         Me.btnGuardar.FlatAppearance.BorderSize = 0
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGuardar.Location = New System.Drawing.Point(372, 8)
+        Me.btnGuardar.Location = New System.Drawing.Point(376, 8)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(65, 55)
         Me.btnGuardar.TabIndex = 3
@@ -388,13 +421,6 @@ Partial Class wfImporteCostosIndirectos
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Id empresa:"
         '
-        'txtEmpresa
-        '
-        Me.txtEmpresa.Location = New System.Drawing.Point(480, 78)
-        Me.txtEmpresa.Name = "txtEmpresa"
-        Me.txtEmpresa.Size = New System.Drawing.Size(100, 20)
-        Me.txtEmpresa.TabIndex = 3
-        '
         'lblUsuario
         '
         Me.lblUsuario.AutoSize = True
@@ -404,13 +430,6 @@ Partial Class wfImporteCostosIndirectos
         Me.lblUsuario.TabIndex = 13
         Me.lblUsuario.Text = "Usuario:"
         '
-        'txtUsuario
-        '
-        Me.txtUsuario.Location = New System.Drawing.Point(480, 102)
-        Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(100, 20)
-        Me.txtUsuario.TabIndex = 4
-        '
         'lblMoneda
         '
         Me.lblMoneda.AutoSize = True
@@ -419,13 +438,6 @@ Partial Class wfImporteCostosIndirectos
         Me.lblMoneda.Size = New System.Drawing.Size(49, 13)
         Me.lblMoneda.TabIndex = 15
         Me.lblMoneda.Text = "Moneda:"
-        '
-        'txtMoneda
-        '
-        Me.txtMoneda.Location = New System.Drawing.Point(480, 128)
-        Me.txtMoneda.Name = "txtMoneda"
-        Me.txtMoneda.Size = New System.Drawing.Size(100, 20)
-        Me.txtMoneda.TabIndex = 5
         '
         'PresupuestoDataSet
         '
@@ -468,33 +480,32 @@ Partial Class wfImporteCostosIndirectos
         Me.Button1.TabIndex = 6
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Column1
+        'cboEmpresa
         '
-        Me.Column1.HeaderText = "Id costo"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Visible = False
+        Me.cboEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboEmpresa.FormattingEnabled = True
+        Me.cboEmpresa.Location = New System.Drawing.Point(484, 77)
+        Me.cboEmpresa.Name = "cboEmpresa"
+        Me.cboEmpresa.Size = New System.Drawing.Size(43, 21)
+        Me.cboEmpresa.TabIndex = 16
         '
-        'Column2
+        'cboUsuario
         '
-        DataGridViewCellStyle5.Format = "N3"
-        DataGridViewCellStyle5.NullValue = Nothing
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Column2.HeaderText = "Id presupuesto costo indirecto"
-        Me.Column2.Name = "Column2"
+        Me.cboUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboUsuario.FormattingEnabled = True
+        Me.cboUsuario.Location = New System.Drawing.Point(484, 103)
+        Me.cboUsuario.Name = "cboUsuario"
+        Me.cboUsuario.Size = New System.Drawing.Size(43, 21)
+        Me.cboUsuario.TabIndex = 17
         '
-        'Column3
+        'cboMoneda
         '
-        Me.Column3.HeaderText = "Nombre "
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        DataGridViewCellStyle6.Format = "Q###,###,###.##"
-        DataGridViewCellStyle6.NullValue = "00.00"
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Column4.HeaderText = "Valor"
-        Me.Column4.Name = "Column4"
+        Me.cboMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMoneda.FormattingEnabled = True
+        Me.cboMoneda.Location = New System.Drawing.Point(484, 130)
+        Me.cboMoneda.Name = "cboMoneda"
+        Me.cboMoneda.Size = New System.Drawing.Size(43, 21)
+        Me.cboMoneda.TabIndex = 18
         '
         'wfImporteCostosIndirectos
         '
@@ -502,11 +513,11 @@ Partial Class wfImporteCostosIndirectos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(674, 552)
-        Me.Controls.Add(Me.txtMoneda)
+        Me.Controls.Add(Me.cboMoneda)
+        Me.Controls.Add(Me.cboUsuario)
+        Me.Controls.Add(Me.cboEmpresa)
         Me.Controls.Add(Me.lblMoneda)
-        Me.Controls.Add(Me.txtUsuario)
         Me.Controls.Add(Me.lblUsuario)
-        Me.Controls.Add(Me.txtEmpresa)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.dtpPeriodo)
         Me.Controls.Add(Me.Label5)
@@ -563,13 +574,10 @@ Partial Class wfImporteCostosIndirectos
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents dtpPeriodo As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents txtEmpresa As System.Windows.Forms.TextBox
     Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents lblUsuario As System.Windows.Forms.Label
-    Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
     Friend WithEvents lblMoneda As System.Windows.Forms.Label
-    Friend WithEvents txtMoneda As System.Windows.Forms.TextBox
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents dgvDatos As System.Windows.Forms.DataGridView
     Friend WithEvents Label11 As System.Windows.Forms.Label
@@ -590,4 +598,7 @@ Partial Class wfImporteCostosIndirectos
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cboEmpresa As System.Windows.Forms.ComboBox
+    Friend WithEvents cboUsuario As System.Windows.Forms.ComboBox
+    Friend WithEvents cboMoneda As System.Windows.Forms.ComboBox
 End Class

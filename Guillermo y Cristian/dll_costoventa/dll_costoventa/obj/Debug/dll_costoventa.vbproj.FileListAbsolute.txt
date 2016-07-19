@@ -16,3 +16,7 @@ C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costo
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.dll
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.xml
 C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.pdb
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\bin\Debug\dllConexion.dll
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\bin\Debug\dllConexion.pdb
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\bin\Debug\dllConexion.xml
+C:\Users\cristian\Documents\Visual Studio 2015\Projects\dll_costoventa\dll_costoventa\obj\Debug\dll_costoventa.wfConsultacv.resources

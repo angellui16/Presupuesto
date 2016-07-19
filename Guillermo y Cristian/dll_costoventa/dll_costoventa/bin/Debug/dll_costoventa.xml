@@ -32,6 +32,11 @@ dll_costoventa
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:dll_costoventa.My.Resources.Resources.find">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:dll_costoventa.My.Resources.Resources.Floppy_disk_512">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
