@@ -1,0 +1,13 @@
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\bin\Debug\dll_ComprasMaterialesDirectos.dll
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\bin\Debug\dll_ComprasMaterialesDirectos.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\bin\Debug\dll_ComprasMaterialesDirectos.xml
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\bin\Debug\dllConexion.dll
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\bin\Debug\dllConexion.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\bin\Debug\dllConexion.xml
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.vbprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.Resources.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.frComprasMaterialesDirectos.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.vbproj.GenerateResource.Cache
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.dll
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.xml
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_ComprasMaterialesDirectos\dll_ComprasMaterialesDirectos\obj\Debug\dll_ComprasMaterialesDirectos.pdb
