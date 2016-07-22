@@ -339,6 +339,7 @@ Public Class frCMaterialesDirectos
                 dgUltimo.Visible = True
                 dgUltimo2.Visible = True
                 btnGuardar.Enabled = True
+                btnCrear.Enabled = True
 
             Else
                 'MsgBox("Error al guardar")
@@ -362,6 +363,14 @@ Public Class frCMaterialesDirectos
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
         Dim limpiar As vcLimpiar = New vcLimpiar()
         limpiar.LimpiarCampos(Me)
+        tbIdpresupuesto.Clear()
+        tbNombre.Clear()
+        tbGTotal.Clear()
+        dgUltimo.Rows.Clear()
+        dgUltimo2.Rows.Clear()
+        dgUltimo.Visible = False
+        dgUltimo2.Visible = False
+        btnGuardar.Enabled = False
     End Sub
 
     Public Sub SumarInvDeseado()

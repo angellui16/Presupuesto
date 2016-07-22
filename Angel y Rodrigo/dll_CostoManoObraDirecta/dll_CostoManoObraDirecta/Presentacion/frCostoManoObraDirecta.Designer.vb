@@ -22,14 +22,24 @@ Partial Class frCostoManoObraDirecta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.dgUltimo2 = New System.Windows.Forms.DataGridView()
+        Me.descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MatD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MatD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MatD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgUltimo = New System.Windows.Forms.DataGridView()
+        Me.Descripción = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.dgCManoObra = New System.Windows.Forms.DataGridView()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -69,25 +79,22 @@ Partial Class frCostoManoObraDirecta
         Me.tbControl = New System.Windows.Forms.TextBox()
         Me.cbControl = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.dgUltimo2 = New System.Windows.Forms.DataGridView()
-        Me.descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MatD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MatD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MatD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgUltimo = New System.Windows.Forms.DataGridView()
-        Me.Descripción = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cbId_PProduccion = New System.Windows.Forms.ComboBox()
+        Me.cbId_produccion = New System.Windows.Forms.ComboBox()
+        Me.btnCrear = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtFilas = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.dgUltimo2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.dgCManoObra, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
         CType(Me.dgCDMO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.dgUltimo2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -113,6 +120,92 @@ Partial Class frCostoManoObraDirecta
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Detalle Mano de Obra"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'dgUltimo2
+        '
+        Me.dgUltimo2.AllowUserToAddRows = False
+        Me.dgUltimo2.AllowUserToDeleteRows = False
+        Me.dgUltimo2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgUltimo2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.descripcion, Me.MatD1, Me.MatD2, Me.MatD3})
+        Me.dgUltimo2.Location = New System.Drawing.Point(6, 282)
+        Me.dgUltimo2.Name = "dgUltimo2"
+        Me.dgUltimo2.Size = New System.Drawing.Size(683, 112)
+        Me.dgUltimo2.TabIndex = 12
+        '
+        'descripcion
+        '
+        Me.descripcion.HeaderText = ""
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.Width = 200
+        '
+        'MatD1
+        '
+        DataGridViewCellStyle1.Format = "Q###,###,###.##"
+        DataGridViewCellStyle1.NullValue = "0.00"
+        Me.MatD1.DefaultCellStyle = DataGridViewCellStyle1
+        Me.MatD1.HeaderText = ""
+        Me.MatD1.Name = "MatD1"
+        Me.MatD1.Width = 145
+        '
+        'MatD2
+        '
+        DataGridViewCellStyle2.Format = "Q###,###,###.##"
+        DataGridViewCellStyle2.NullValue = "0.00"
+        Me.MatD2.DefaultCellStyle = DataGridViewCellStyle2
+        Me.MatD2.HeaderText = ""
+        Me.MatD2.Name = "MatD2"
+        Me.MatD2.Width = 145
+        '
+        'MatD3
+        '
+        DataGridViewCellStyle3.Format = "Q###,###,###.##"
+        DataGridViewCellStyle3.NullValue = "0.00"
+        Me.MatD3.DefaultCellStyle = DataGridViewCellStyle3
+        Me.MatD3.HeaderText = ""
+        Me.MatD3.Name = "MatD3"
+        Me.MatD3.Width = 145
+        '
+        'dgUltimo
+        '
+        Me.dgUltimo.AllowUserToAddRows = False
+        Me.dgUltimo.AllowUserToDeleteRows = False
+        Me.dgUltimo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgUltimo.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Descripción, Me.MD1, Me.MD2, Me.MD3})
+        Me.dgUltimo.Location = New System.Drawing.Point(6, 11)
+        Me.dgUltimo.Name = "dgUltimo"
+        Me.dgUltimo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.dgUltimo.Size = New System.Drawing.Size(683, 265)
+        Me.dgUltimo.TabIndex = 11
+        '
+        'Descripción
+        '
+        Me.Descripción.HeaderText = "DESCRIPCIÓN"
+        Me.Descripción.Name = "Descripción"
+        Me.Descripción.Width = 200
+        '
+        'MD1
+        '
+        DataGridViewCellStyle4.NullValue = "0.00"
+        Me.MD1.DefaultCellStyle = DataGridViewCellStyle4
+        Me.MD1.HeaderText = "PRODUCTO D. 1"
+        Me.MD1.Name = "MD1"
+        Me.MD1.Width = 145
+        '
+        'MD2
+        '
+        DataGridViewCellStyle5.NullValue = "0.00"
+        Me.MD2.DefaultCellStyle = DataGridViewCellStyle5
+        Me.MD2.HeaderText = "PRODUCTO D.2"
+        Me.MD2.Name = "MD2"
+        Me.MD2.Width = 145
+        '
+        'MD3
+        '
+        DataGridViewCellStyle6.NullValue = "0.00"
+        Me.MD3.DefaultCellStyle = DataGridViewCellStyle6
+        Me.MD3.HeaderText = "PRODUCTO D.3"
+        Me.MD3.Name = "MD3"
+        Me.MD3.Width = 145
         '
         'TabPage2
         '
@@ -140,7 +233,7 @@ Partial Class frCostoManoObraDirecta
         Me.TabPage3.Controls.Add(Me.dgCDMO)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(694, 215)
+        Me.TabPage3.Size = New System.Drawing.Size(694, 404)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Consulta Det. Mano Obra"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -152,7 +245,7 @@ Partial Class frCostoManoObraDirecta
         Me.dgCDMO.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgCDMO.Location = New System.Drawing.Point(0, 0)
         Me.dgCDMO.Name = "dgCDMO"
-        Me.dgCDMO.Size = New System.Drawing.Size(694, 215)
+        Me.dgCDMO.Size = New System.Drawing.Size(694, 404)
         Me.dgCDMO.TabIndex = 0
         '
         'tbGTotal
@@ -178,7 +271,7 @@ Partial Class frCostoManoObraDirecta
         'lblMoneda
         '
         Me.lblMoneda.AutoSize = True
-        Me.lblMoneda.Location = New System.Drawing.Point(467, 121)
+        Me.lblMoneda.Location = New System.Drawing.Point(308, 121)
         Me.lblMoneda.Name = "lblMoneda"
         Me.lblMoneda.Size = New System.Drawing.Size(49, 13)
         Me.lblMoneda.TabIndex = 100
@@ -187,7 +280,7 @@ Partial Class frCostoManoObraDirecta
         'lblUsuario
         '
         Me.lblUsuario.AutoSize = True
-        Me.lblUsuario.Location = New System.Drawing.Point(467, 94)
+        Me.lblUsuario.Location = New System.Drawing.Point(308, 94)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(46, 13)
         Me.lblUsuario.TabIndex = 99
@@ -197,7 +290,7 @@ Partial Class frCostoManoObraDirecta
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(467, 66)
+        Me.Label6.Location = New System.Drawing.Point(308, 66)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 15)
         Me.Label6.TabIndex = 98
@@ -207,17 +300,17 @@ Partial Class frCostoManoObraDirecta
         '
         Me.dtpPeriodo.CustomFormat = "yyyy/MM/dd"
         Me.dtpPeriodo.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpPeriodo.Location = New System.Drawing.Point(208, 115)
+        Me.dtpPeriodo.Location = New System.Drawing.Point(112, 115)
         Me.dtpPeriodo.Name = "dtpPeriodo"
         Me.dtpPeriodo.Size = New System.Drawing.Size(100, 20)
-        Me.dtpPeriodo.TabIndex = 87
+        Me.dtpPeriodo.TabIndex = 2
         Me.dtpPeriodo.Value = New Date(2016, 7, 6, 0, 0, 0, 0)
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(111, 121)
+        Me.Label5.Location = New System.Drawing.Point(15, 121)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 15)
         Me.Label5.TabIndex = 97
@@ -225,16 +318,16 @@ Partial Class frCostoManoObraDirecta
         '
         'tbNombre
         '
-        Me.tbNombre.Location = New System.Drawing.Point(208, 87)
+        Me.tbNombre.Location = New System.Drawing.Point(112, 87)
         Me.tbNombre.Name = "tbNombre"
         Me.tbNombre.Size = New System.Drawing.Size(185, 20)
-        Me.tbNombre.TabIndex = 86
+        Me.tbNombre.TabIndex = 1
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(111, 92)
+        Me.Label4.Location = New System.Drawing.Point(15, 92)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 15)
         Me.Label4.TabIndex = 96
@@ -243,7 +336,7 @@ Partial Class frCostoManoObraDirecta
         'tbIdpresupuesto
         '
         Me.tbIdpresupuesto.Enabled = False
-        Me.tbIdpresupuesto.Location = New System.Drawing.Point(208, 61)
+        Me.tbIdpresupuesto.Location = New System.Drawing.Point(112, 61)
         Me.tbIdpresupuesto.Name = "tbIdpresupuesto"
         Me.tbIdpresupuesto.ReadOnly = True
         Me.tbIdpresupuesto.Size = New System.Drawing.Size(100, 20)
@@ -253,7 +346,7 @@ Partial Class frCostoManoObraDirecta
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(111, 66)
+        Me.Label1.Location = New System.Drawing.Point(15, 66)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 15)
         Me.Label1.TabIndex = 95
@@ -312,7 +405,7 @@ Partial Class frCostoManoObraDirecta
         Me.btnGuardar.Location = New System.Drawing.Point(469, 8)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(58, 59)
-        Me.btnGuardar.TabIndex = 81
+        Me.btnGuardar.TabIndex = 13
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'Label14
@@ -333,7 +426,7 @@ Partial Class frCostoManoObraDirecta
         Me.btnTransf.Location = New System.Drawing.Point(12, 10)
         Me.btnTransf.Name = "btnTransf"
         Me.btnTransf.Size = New System.Drawing.Size(65, 55)
-        Me.btnTransf.TabIndex = 79
+        Me.btnTransf.TabIndex = 14
         Me.btnTransf.UseVisualStyleBackColor = True
         '
         'Label12
@@ -372,7 +465,7 @@ Partial Class frCostoManoObraDirecta
         Me.btnReporte.Location = New System.Drawing.Point(83, 10)
         Me.btnReporte.Name = "btnReporte"
         Me.btnReporte.Size = New System.Drawing.Size(65, 55)
-        Me.btnReporte.TabIndex = 77
+        Me.btnReporte.TabIndex = 15
         Me.btnReporte.UseVisualStyleBackColor = True
         '
         'Label10
@@ -411,7 +504,7 @@ Partial Class frCostoManoObraDirecta
         Me.btnSalir.Location = New System.Drawing.Point(661, 6)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(58, 59)
-        Me.btnSalir.TabIndex = 12
+        Me.btnSalir.TabIndex = 16
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'btnEliminar
@@ -423,7 +516,7 @@ Partial Class frCostoManoObraDirecta
         Me.btnEliminar.Location = New System.Drawing.Point(597, 6)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(58, 59)
-        Me.btnEliminar.TabIndex = 11
+        Me.btnEliminar.TabIndex = 18
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnModificar
@@ -435,7 +528,7 @@ Partial Class frCostoManoObraDirecta
         Me.btnModificar.Location = New System.Drawing.Point(533, 8)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(58, 59)
-        Me.btnModificar.TabIndex = 10
+        Me.btnModificar.TabIndex = 17
         Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnLimpiar
@@ -465,41 +558,43 @@ Partial Class frCostoManoObraDirecta
         'cbEmpresa
         '
         Me.cbEmpresa.FormattingEnabled = True
-        Me.cbEmpresa.Location = New System.Drawing.Point(545, 65)
+        Me.cbEmpresa.Location = New System.Drawing.Point(384, 65)
         Me.cbEmpresa.Name = "cbEmpresa"
-        Me.cbEmpresa.Size = New System.Drawing.Size(121, 21)
-        Me.cbEmpresa.TabIndex = 103
+        Me.cbEmpresa.Size = New System.Drawing.Size(107, 21)
+        Me.cbEmpresa.TabIndex = 3
         '
         'cbUsuario
         '
         Me.cbUsuario.FormattingEnabled = True
-        Me.cbUsuario.Location = New System.Drawing.Point(545, 91)
+        Me.cbUsuario.Location = New System.Drawing.Point(384, 91)
         Me.cbUsuario.Name = "cbUsuario"
-        Me.cbUsuario.Size = New System.Drawing.Size(121, 21)
-        Me.cbUsuario.TabIndex = 104
+        Me.cbUsuario.Size = New System.Drawing.Size(107, 21)
+        Me.cbUsuario.TabIndex = 4
         '
         'cbMoneda
         '
         Me.cbMoneda.FormattingEnabled = True
-        Me.cbMoneda.Location = New System.Drawing.Point(545, 118)
+        Me.cbMoneda.Location = New System.Drawing.Point(384, 118)
         Me.cbMoneda.Name = "cbMoneda"
-        Me.cbMoneda.Size = New System.Drawing.Size(121, 21)
-        Me.cbMoneda.TabIndex = 105
+        Me.cbMoneda.Size = New System.Drawing.Size(107, 21)
+        Me.cbMoneda.TabIndex = 5
         '
         'tbControl
         '
-        Me.tbControl.Location = New System.Drawing.Point(361, 60)
+        Me.tbControl.Location = New System.Drawing.Point(265, 60)
         Me.tbControl.Name = "tbControl"
         Me.tbControl.Size = New System.Drawing.Size(32, 20)
         Me.tbControl.TabIndex = 106
+        Me.tbControl.Visible = False
         '
         'cbControl
         '
         Me.cbControl.FormattingEnabled = True
-        Me.cbControl.Location = New System.Drawing.Point(315, 60)
+        Me.cbControl.Location = New System.Drawing.Point(219, 60)
         Me.cbControl.Name = "cbControl"
         Me.cbControl.Size = New System.Drawing.Size(40, 21)
         Me.cbControl.TabIndex = 107
+        Me.cbControl.Visible = False
         '
         'Button1
         '
@@ -508,99 +603,75 @@ Partial Class frCostoManoObraDirecta
         Me.Button1.Enabled = False
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(28, 7)
+        Me.Button1.Location = New System.Drawing.Point(19, 7)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 58)
         Me.Button1.TabIndex = 94
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'dgUltimo2
+        'cbId_PProduccion
         '
-        Me.dgUltimo2.AllowUserToAddRows = False
-        Me.dgUltimo2.AllowUserToDeleteRows = False
-        Me.dgUltimo2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgUltimo2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.descripcion, Me.MatD1, Me.MatD2, Me.MatD3})
-        Me.dgUltimo2.Location = New System.Drawing.Point(6, 215)
-        Me.dgUltimo2.Name = "dgUltimo2"
-        Me.dgUltimo2.Size = New System.Drawing.Size(683, 179)
-        Me.dgUltimo2.TabIndex = 6
-        Me.dgUltimo2.Visible = False
+        Me.cbId_PProduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbId_PProduccion.FormattingEnabled = True
+        Me.cbId_PProduccion.Location = New System.Drawing.Point(621, 86)
+        Me.cbId_PProduccion.Name = "cbId_PProduccion"
+        Me.cbId_PProduccion.Size = New System.Drawing.Size(87, 21)
+        Me.cbId_PProduccion.TabIndex = 7
         '
-        'descripcion
+        'cbId_produccion
         '
-        Me.descripcion.HeaderText = ""
-        Me.descripcion.Name = "descripcion"
-        Me.descripcion.Width = 200
+        Me.cbId_produccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbId_produccion.FormattingEnabled = True
+        Me.cbId_produccion.Location = New System.Drawing.Point(621, 59)
+        Me.cbId_produccion.Name = "cbId_produccion"
+        Me.cbId_produccion.Size = New System.Drawing.Size(87, 21)
+        Me.cbId_produccion.TabIndex = 6
         '
-        'MatD1
+        'btnCrear
         '
-        DataGridViewCellStyle13.Format = "Q###,###,###.##"
-        DataGridViewCellStyle13.NullValue = "0.00"
-        Me.MatD1.DefaultCellStyle = DataGridViewCellStyle13
-        Me.MatD1.HeaderText = ""
-        Me.MatD1.Name = "MatD1"
-        Me.MatD1.Width = 145
+        Me.btnCrear.Enabled = False
+        Me.btnCrear.Location = New System.Drawing.Point(625, 138)
+        Me.btnCrear.Name = "btnCrear"
+        Me.btnCrear.Size = New System.Drawing.Size(61, 27)
+        Me.btnCrear.TabIndex = 10
+        Me.btnCrear.Text = "Crear"
+        Me.btnCrear.UseVisualStyleBackColor = True
         '
-        'MatD2
+        'Label7
         '
-        DataGridViewCellStyle14.Format = "Q###,###,###.##"
-        DataGridViewCellStyle14.NullValue = "0.00"
-        Me.MatD2.DefaultCellStyle = DataGridViewCellStyle14
-        Me.MatD2.HeaderText = ""
-        Me.MatD2.Name = "MatD2"
-        Me.MatD2.Width = 145
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(511, 119)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(75, 13)
+        Me.Label7.TabIndex = 132
+        Me.Label7.Text = "No. Productos"
         '
-        'MatD3
+        'txtFilas
         '
-        DataGridViewCellStyle15.Format = "Q###,###,###.##"
-        DataGridViewCellStyle15.NullValue = "0.00"
-        Me.MatD3.DefaultCellStyle = DataGridViewCellStyle15
-        Me.MatD3.HeaderText = ""
-        Me.MatD3.Name = "MatD3"
-        Me.MatD3.Width = 145
+        Me.txtFilas.Location = New System.Drawing.Point(621, 109)
+        Me.txtFilas.Name = "txtFilas"
+        Me.txtFilas.Size = New System.Drawing.Size(87, 20)
+        Me.txtFilas.TabIndex = 9
         '
-        'dgUltimo
+        'Label25
         '
-        Me.dgUltimo.AllowUserToAddRows = False
-        Me.dgUltimo.AllowUserToDeleteRows = False
-        Me.dgUltimo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgUltimo.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Descripción, Me.MD1, Me.MD2, Me.MD3})
-        Me.dgUltimo.Location = New System.Drawing.Point(6, 11)
-        Me.dgUltimo.Name = "dgUltimo"
-        Me.dgUltimo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.dgUltimo.Size = New System.Drawing.Size(683, 198)
-        Me.dgUltimo.TabIndex = 5
-        Me.dgUltimo.Visible = False
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(509, 91)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(113, 15)
+        Me.Label25.TabIndex = 134
+        Me.Label25.Text = "Id Pres. Producción"
         '
-        'Descripción
+        'Label24
         '
-        Me.Descripción.HeaderText = "DESCRIPCIÓN"
-        Me.Descripción.Name = "Descripción"
-        Me.Descripción.Width = 200
-        '
-        'MD1
-        '
-        DataGridViewCellStyle16.NullValue = "0.00"
-        Me.MD1.DefaultCellStyle = DataGridViewCellStyle16
-        Me.MD1.HeaderText = "PRODUCTO D. 1"
-        Me.MD1.Name = "MD1"
-        Me.MD1.Width = 145
-        '
-        'MD2
-        '
-        DataGridViewCellStyle17.NullValue = "0.00"
-        Me.MD2.DefaultCellStyle = DataGridViewCellStyle17
-        Me.MD2.HeaderText = "PRODUCTO D.2"
-        Me.MD2.Name = "MD2"
-        Me.MD2.Width = 145
-        '
-        'MD3
-        '
-        DataGridViewCellStyle18.NullValue = "0.00"
-        Me.MD3.DefaultCellStyle = DataGridViewCellStyle18
-        Me.MD3.HeaderText = "PRODUCTO D.3"
-        Me.MD3.Name = "MD3"
-        Me.MD3.Width = 145
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(509, 65)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(82, 15)
+        Me.Label24.TabIndex = 133
+        Me.Label24.Text = "Id Producción"
         '
         'frCostoManoObraDirecta
         '
@@ -609,6 +680,13 @@ Partial Class frCostoManoObraDirecta
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(726, 701)
         Me.ControlBox = False
+        Me.Controls.Add(Me.cbId_PProduccion)
+        Me.Controls.Add(Me.cbId_produccion)
+        Me.Controls.Add(Me.btnCrear)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtFilas)
+        Me.Controls.Add(Me.Label25)
+        Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.cbControl)
         Me.Controls.Add(Me.tbControl)
         Me.Controls.Add(Me.cbMoneda)
@@ -635,14 +713,14 @@ Partial Class frCostoManoObraDirecta
         Me.Text = "Costo Mano Obra Directa"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        CType(Me.dgUltimo2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         CType(Me.dgCManoObra, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         CType(Me.dgCDMO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.dgUltimo2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -699,4 +777,11 @@ Partial Class frCostoManoObraDirecta
     Friend WithEvents MD1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MD2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MD3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cbId_PProduccion As System.Windows.Forms.ComboBox
+    Friend WithEvents cbId_produccion As System.Windows.Forms.ComboBox
+    Friend WithEvents btnCrear As System.Windows.Forms.Button
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents txtFilas As System.Windows.Forms.TextBox
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Label24 As System.Windows.Forms.Label
 End Class

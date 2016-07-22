@@ -24,4 +24,3 @@ C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.pdb
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.Form1.resources
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.frCostoManoObraDirectaT.resources
-C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.vbprojResolveAssemblyReference.cache

@@ -22,12 +22,12 @@ Partial Class frCMaterialesDirectos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frCMaterialesDirectos))
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
@@ -76,16 +76,16 @@ Partial Class frCMaterialesDirectos
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.dgMD = New System.Windows.Forms.DataGridView()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.dgUltimo = New System.Windows.Forms.DataGridView()
-        Me.MD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Descripción = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgUltimo2 = New System.Windows.Forms.DataGridView()
-        Me.MatD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MatD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MatD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MatD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MatD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MatD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgUltimo = New System.Windows.Forms.DataGridView()
+        Me.Descripción = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MD1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MD3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -93,8 +93,8 @@ Partial Class frCMaterialesDirectos
         Me.TabPage2.SuspendLayout()
         CType(Me.dgMD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
-        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgUltimo2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -442,6 +442,7 @@ Partial Class frCMaterialesDirectos
         '
         'btnCrear
         '
+        Me.btnCrear.Enabled = False
         Me.btnCrear.Location = New System.Drawing.Point(621, 130)
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(61, 27)
@@ -496,6 +497,7 @@ Partial Class frCMaterialesDirectos
         Me.cbControl.Name = "cbControl"
         Me.cbControl.Size = New System.Drawing.Size(39, 21)
         Me.cbControl.TabIndex = 128
+        Me.cbControl.Visible = False
         '
         'tbControl
         '
@@ -503,6 +505,7 @@ Partial Class frCMaterialesDirectos
         Me.tbControl.Name = "tbControl"
         Me.tbControl.Size = New System.Drawing.Size(31, 20)
         Me.tbControl.TabIndex = 129
+        Me.tbControl.Visible = False
         '
         'cbId_produccion
         '
@@ -572,6 +575,51 @@ Partial Class frCMaterialesDirectos
         Me.TabPage4.Text = "Detalle Materiales Directos"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
+        'dgUltimo2
+        '
+        Me.dgUltimo2.AllowUserToAddRows = False
+        Me.dgUltimo2.AllowUserToDeleteRows = False
+        Me.dgUltimo2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgUltimo2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.descripcion, Me.MatD1, Me.MatD2, Me.MatD3})
+        Me.dgUltimo2.Location = New System.Drawing.Point(8, 207)
+        Me.dgUltimo2.Name = "dgUltimo2"
+        Me.dgUltimo2.Size = New System.Drawing.Size(683, 179)
+        Me.dgUltimo2.TabIndex = 4
+        Me.dgUltimo2.Visible = False
+        '
+        'descripcion
+        '
+        Me.descripcion.HeaderText = ""
+        Me.descripcion.Name = "descripcion"
+        Me.descripcion.Width = 200
+        '
+        'MatD1
+        '
+        DataGridViewCellStyle1.Format = "Q###,###,###.##"
+        DataGridViewCellStyle1.NullValue = "0.00"
+        Me.MatD1.DefaultCellStyle = DataGridViewCellStyle1
+        Me.MatD1.HeaderText = ""
+        Me.MatD1.Name = "MatD1"
+        Me.MatD1.Width = 145
+        '
+        'MatD2
+        '
+        DataGridViewCellStyle2.Format = "Q###,###,###.##"
+        DataGridViewCellStyle2.NullValue = "0.00"
+        Me.MatD2.DefaultCellStyle = DataGridViewCellStyle2
+        Me.MatD2.HeaderText = ""
+        Me.MatD2.Name = "MatD2"
+        Me.MatD2.Width = 145
+        '
+        'MatD3
+        '
+        DataGridViewCellStyle3.Format = "Q###,###,###.##"
+        DataGridViewCellStyle3.NullValue = "0.00"
+        Me.MatD3.DefaultCellStyle = DataGridViewCellStyle3
+        Me.MatD3.HeaderText = ""
+        Me.MatD3.Name = "MatD3"
+        Me.MatD3.Width = 145
+        '
         'dgUltimo
         '
         Me.dgUltimo.AllowUserToAddRows = False
@@ -585,21 +633,11 @@ Partial Class frCMaterialesDirectos
         Me.dgUltimo.TabIndex = 0
         Me.dgUltimo.Visible = False
         '
-        'MD3
+        'Descripción
         '
-        DataGridViewCellStyle6.NullValue = "0.00"
-        Me.MD3.DefaultCellStyle = DataGridViewCellStyle6
-        Me.MD3.HeaderText = "PRODUCTO D.3"
-        Me.MD3.Name = "MD3"
-        Me.MD3.Width = 145
-        '
-        'MD2
-        '
-        DataGridViewCellStyle5.NullValue = "0.00"
-        Me.MD2.DefaultCellStyle = DataGridViewCellStyle5
-        Me.MD2.HeaderText = "PRODUCTO D.2"
-        Me.MD2.Name = "MD2"
-        Me.MD2.Width = 145
+        Me.Descripción.HeaderText = "DESCRIPCIÓN"
+        Me.Descripción.Name = "Descripción"
+        Me.Descripción.Width = 200
         '
         'MD1
         '
@@ -609,56 +647,21 @@ Partial Class frCMaterialesDirectos
         Me.MD1.Name = "MD1"
         Me.MD1.Width = 145
         '
-        'Descripción
+        'MD2
         '
-        Me.Descripción.HeaderText = "DESCRIPCIÓN"
-        Me.Descripción.Name = "Descripción"
-        Me.Descripción.Width = 200
+        DataGridViewCellStyle5.NullValue = "0.00"
+        Me.MD2.DefaultCellStyle = DataGridViewCellStyle5
+        Me.MD2.HeaderText = "PRODUCTO D.2"
+        Me.MD2.Name = "MD2"
+        Me.MD2.Width = 145
         '
-        'dgUltimo2
+        'MD3
         '
-        Me.dgUltimo2.AllowUserToAddRows = False
-        Me.dgUltimo2.AllowUserToDeleteRows = False
-        Me.dgUltimo2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgUltimo2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.descripcion, Me.MatD1, Me.MatD2, Me.MatD3})
-        Me.dgUltimo2.Location = New System.Drawing.Point(8, 207)
-        Me.dgUltimo2.Name = "dgUltimo2"
-        Me.dgUltimo2.Size = New System.Drawing.Size(683, 179)
-        Me.dgUltimo2.TabIndex = 4
-        Me.dgUltimo2.Visible = False
-        '
-        'MatD3
-        '
-        DataGridViewCellStyle3.Format = "Q###,###,###.##"
-        DataGridViewCellStyle3.NullValue = "0.00"
-        Me.MatD3.DefaultCellStyle = DataGridViewCellStyle3
-        Me.MatD3.HeaderText = ""
-        Me.MatD3.Name = "MatD3"
-        Me.MatD3.Width = 145
-        '
-        'MatD2
-        '
-        DataGridViewCellStyle2.Format = "Q###,###,###.##"
-        DataGridViewCellStyle2.NullValue = "0.00"
-        Me.MatD2.DefaultCellStyle = DataGridViewCellStyle2
-        Me.MatD2.HeaderText = ""
-        Me.MatD2.Name = "MatD2"
-        Me.MatD2.Width = 145
-        '
-        'MatD1
-        '
-        DataGridViewCellStyle1.Format = "Q###,###,###.##"
-        DataGridViewCellStyle1.NullValue = "0.00"
-        Me.MatD1.DefaultCellStyle = DataGridViewCellStyle1
-        Me.MatD1.HeaderText = ""
-        Me.MatD1.Name = "MatD1"
-        Me.MatD1.Width = 145
-        '
-        'descripcion
-        '
-        Me.descripcion.HeaderText = ""
-        Me.descripcion.Name = "descripcion"
-        Me.descripcion.Width = 200
+        DataGridViewCellStyle6.NullValue = "0.00"
+        Me.MD3.DefaultCellStyle = DataGridViewCellStyle6
+        Me.MD3.HeaderText = "PRODUCTO D.3"
+        Me.MD3.Name = "MD3"
+        Me.MD3.Width = 145
         '
         'TabControl1
         '
@@ -719,8 +722,8 @@ Partial Class frCMaterialesDirectos
         Me.TabPage2.ResumeLayout(False)
         CType(Me.dgMD, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
-        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgUltimo2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgUltimo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
