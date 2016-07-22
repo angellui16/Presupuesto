@@ -11,6 +11,7 @@
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,9 +44,11 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dllConexion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\dllConexion\dllConexion\bin\Debug\dllConexion.dll</HintPath>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="dllConexion">
+      <HintPath>..\..\dllConexion\dllConexion\bin\Debug\dllConexion.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -70,6 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.vb" />
+    <Compile Include="Datos\vcCN.vb" />
+    <Compile Include="Datos\vcDatos.vb" />
     <Compile Include="Datos\vcLimpiar.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -86,11 +91,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Presentacion\frComprasMaterialesDirectos.Designer.vb">
-      <DependentUpon>frComprasMaterialesDirectos.vb</DependentUpon>
+    <Compile Include="Presentacion\frCMaterialesDirectos.Designer.vb">
+      <DependentUpon>frCMaterialesDirectos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frComprasMaterialesDirectos.vb">
+    <Compile Include="Presentacion\frCMaterialesDirectos.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frComprasMaterialesDirectosT.Designer.vb">
+      <DependentUpon>frComprasMaterialesDirectosT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frComprasMaterialesDirectosT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frPopupCMD.Designer.vb">
+      <DependentUpon>frPopupCMD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frPopupCMD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptMaterialesDirectos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMaterialesDirectos.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -100,8 +123,18 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frComprasMaterialesDirectos.resx">
-      <DependentUpon>frComprasMaterialesDirectos.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\frCMaterialesDirectos.resx">
+      <DependentUpon>frCMaterialesDirectos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frComprasMaterialesDirectosT.resx">
+      <DependentUpon>frComprasMaterialesDirectosT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frPopupCMD.resx">
+      <DependentUpon>frPopupCMD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMaterialesDirectos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMaterialesDirectos.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -116,7 +149,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Negocio\" />
+    <None Include="Resources\download.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calculator.png" />
@@ -138,6 +171,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\phonebook1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

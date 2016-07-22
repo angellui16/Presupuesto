@@ -1,3 +1,15 @@
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dll_CostoManoObraDirecta.dll
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dll_CostoManoObraDirecta.pdb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dll_CostoManoObraDirecta.xml
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dllConexion.pdb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dllConexion.xml
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.vbprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.Resources.resources
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.frCostoManoObraDirecta.resources
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.vbproj.GenerateResource.Cache
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.dll
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.xml
+C:\Users\angel\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.pdb
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dll_CostoManoObraDirecta.dll
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dll_CostoManoObraDirecta.pdb
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\bin\Debug\dll_CostoManoObraDirecta.xml
@@ -10,3 +22,6 @@ C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.dll
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.xml
 C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.Form1.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.frCostoManoObraDirectaT.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2015\Projects\dll_CostoManoObraDirecta\dll_CostoManoObraDirecta\obj\Debug\dll_CostoManoObraDirecta.vbprojResolveAssemblyReference.cache
